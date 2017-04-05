@@ -111,7 +111,6 @@ module AWS
 
     protected
     def decode raw
-      puts raw
       Base64.decode64 raw
     end
 
