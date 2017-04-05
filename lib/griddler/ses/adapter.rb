@@ -16,6 +16,7 @@ module Griddler
       end
 
       def normalize_params
+        pp sns_json
         sns_msg = AWS::SnsMessage.new sns_json
         raise "Invalid SNS message" unless sns_msg.authentic? && sns_msg.topic_arn.end_with?('griddler')
 
