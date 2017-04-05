@@ -111,7 +111,7 @@ module AWS
 
     protected
     def decode raw
-      Base64.decode64 raw
+      Base64.decode raw
     end
 
     def get_public_key_from(x509_pem_url)
